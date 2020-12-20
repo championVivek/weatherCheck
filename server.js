@@ -21,7 +21,7 @@ app.post("/", (req, res) => {
       if (weather.main === undefined) {
         res.render("index", {
           weather: null,
-          error: "Error, please try again",
+          error: "Error, please try again!",
         });
       } else {
         let weat = weather.main.temp;
