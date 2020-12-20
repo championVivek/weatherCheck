@@ -1,10 +1,15 @@
 const express = require("express");
 const request = require("request");
+const cors = require('cors')
 require("dotenv").config();
-
 const bodyParser = require("body-parser");
+
+
 const app = new express();
+
 app.set("view engine", "ejs");
+
+app.use(cors())
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
