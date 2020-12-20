@@ -17,7 +17,6 @@ body{
 	height: auto;
 	background-image: url(../images/sunrise-in-the-mountains.jpg);
     background-size: cover;
-    -webkit-filter: blur(2px);
 	z-index: 0;
 }
 
