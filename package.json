@@ -1,12 +1,11 @@
 {
-  "homepage" : "https:///championVivek.github.io/weathercheck",
+  "homepage" : "https://championvivek.github.io/weatherCheck/",
   "name": "weather-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy" : "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
