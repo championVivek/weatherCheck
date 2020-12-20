@@ -1,7 +1,6 @@
 const express = require("express");
 const request = require("request");
-const dotenv = require("dotenv").config()
-const apiKey = "ff74bfa4b512c5382c63924acf53847e";
+require("dotenv").config()
 
 const bodyParser = require("body-parser");
 const app = new express();
@@ -13,7 +12,7 @@ app.get("/", (req, res) => {
 });
 app.post("/", (req, res) => {
   let city = req.body.city;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.API_KEY}`
   request(url, (err, response, body) => {
     if (err) {
       res.render("index", { weather: null, error: "Error, please try again" });
