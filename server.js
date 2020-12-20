@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.render("index", { weather: null, error: null });
 });
 
-app.post("/", (req, response) => {
+app.post("/weather", (req, response) => {
   let city = req.body.city;
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.API_KEY}`;
 
