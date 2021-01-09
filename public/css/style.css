@@ -2,8 +2,6 @@ body {
   background-repeat: no-repeat;
   background-image: url(../images/sunrise-in-the-mountains.jpg);
   background-size: cover;
-  /* backdrop-filter: grayscale(0.8) opacity(8); */
-  height: 100%;
 }
 
 .body {
@@ -92,6 +90,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    background-size: auto;
+  }
+
   .body {
     display: flex;
     flex-direction: column;
